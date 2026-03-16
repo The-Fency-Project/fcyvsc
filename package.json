@@ -1,0 +1,31 @@
+{
+    "name": "fcyvsc",
+    "displayName": "fcyvsc",
+    "description": "fency programming language highlight",
+    "version": "0.0.1",
+    "engines": {
+      "vscode": "^1.110.0"
+    },
+    "categories": [
+      "Programming Languages"
+    ],
+    "contributes": {
+      "languages": [{
+        "id": "fency",
+        "aliases": ["Fency", "fency"],
+        "extensions": [".fcy", ".fency"],
+        "configuration": "./language-configuration.json"
+      }],
+      "grammars": [{
+        "language": "fency",
+        "scopeName": "source.fcy",
+        "path": "./syntaxes/fency.tmLanguage.json"
+      }]
+    },
+    "devDependencies": {
+      "@vscode/test-electron": "^2.3.9",
+      "@types/vscode": "^1.110.0",
+      "@types/node": "20.x"
+    }
+
+}
